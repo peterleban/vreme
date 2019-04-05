@@ -28,3 +28,17 @@ A source file for Arduino Nano. File is provided by 'Playing With Fusion AS3935
 Lightning Sensor'. It is just modified for the output values.
 
   [distance,energy]
+
+
+*****************************************************************************
+ readStrikesArduino.py
+
+A Python script that listens to the Franklin sensor connected to the USB port
+on the Raspberry Pi through Arduino Nano.
+
+A script can be run with:
+
+  nohup python readStrikesArduino.py &
+
+It goes to background and remains active after the Terminal is closed.
+
