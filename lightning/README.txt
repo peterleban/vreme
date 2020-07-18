@@ -42,3 +42,22 @@ A script can be run with:
 
 It goes to background and remains active after the Terminal is closed.
 
+*****************************************************************************
+
+ AS3935_spi_arduino.ino
+
+Zadnja verzija Arduino (Nano) skice, ki uporablja SPI. Skica najprej izvede
+samodejno kalibracijo, nato nastavi vrednosti:
+
+   noise floor ... vrednost 1 (0-7)
+   spike rejection ... vrednost 1 (0-7)
+   watchdog threshold ... vrednost 3 (0-7)
+   ojačanje ... indoor (indoor/outdoor)
+
+Nato izvede ponovno kalibracijo.
+
+Pravilna nastavitev zgornjih parametrov je ključna za uspešno delovanje
+detektorja! Detektor je namreč zelo občutljiv na elektromagnetne motnje
+iz okolice.
+
+
